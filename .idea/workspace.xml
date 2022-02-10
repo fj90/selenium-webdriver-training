@@ -65,7 +65,7 @@
       <recent name="C:\Users\Q\Documents\GitHub\selenium-webdriver-training\task1\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyFirstTest">
+  <component name="RunManager" selected="JUnit.Task2Login.myFirstTest">
     <configuration name="MyFirstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -98,8 +98,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task2Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2Login" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2Login.myFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2Login" />
+      <option name="METHOD_NAME" value="myFirstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task2Login.myFirstTest" />
+        <item itemvalue="JUnit.Task2Login" />
         <item itemvalue="JUnit.MyFirstTest" />
         <item itemvalue="Gradle.MyFirstTest" />
       </list>
