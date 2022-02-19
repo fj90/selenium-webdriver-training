@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.*;
 public class MyFirstTest {
 
     private WebDriver driver;
-    private WebDriverWait wait;
+   // private WebDriverWait wait;
 
     @Before
     public void start() {

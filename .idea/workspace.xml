@@ -65,29 +65,25 @@
       <recent name="C:\Users\Q\Documents\GitHub\selenium-webdriver-training\task1\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Task2Login.myFirstTest">
-    <configuration name="MyFirstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/task1" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;MyFirstTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.MyFirstTest">
+    <configuration name="MenuClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuClick" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuClick.MenuClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuClick" />
+      <option name="METHOD_NAME" value="MenuClick" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
@@ -98,20 +94,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseLabelsCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task2Login" />
+      <option name="MAIN_CLASS_NAME" value="PurchaseLabelsCheck" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2Login.myFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseLabelsCheck.PurchaseLabelsCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task2Login" />
-      <option name="METHOD_NAME" value="myFirstTest" />
+      <option name="MAIN_CLASS_NAME" value="PurchaseLabelsCheck" />
+      <option name="METHOD_NAME" value="PurchaseLabelsCheck" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,10 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task2Login.myFirstTest" />
-        <item itemvalue="JUnit.Task2Login" />
         <item itemvalue="JUnit.MyFirstTest" />
-        <item itemvalue="Gradle.MyFirstTest" />
+        <item itemvalue="JUnit.PurchaseLabelsCheck" />
+        <item itemvalue="JUnit.PurchaseLabelsCheck.PurchaseLabelsCheck" />
+        <item itemvalue="JUnit.MenuClick.MenuClick" />
+        <item itemvalue="JUnit.MenuClick" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +144,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task2Login.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
