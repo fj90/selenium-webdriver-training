@@ -65,31 +65,31 @@
       <recent name="C:\Users\Q\Documents\GitHub\selenium-webdriver-training\task1\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PurchaseLabelsCheck.PurchaseLabelsChecking">
+  <component name="RunManager" selected="JUnit.MenuClick.MenuClicking">
+    <configuration name="MenuClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuClick" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuClick.MenuClicking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuClick" />
+      <option name="METHOD_NAME" value="MenuClicking" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyFirstTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseLabelsCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task1.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PurchaseLabelsCheck" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseLabelsCheck.PurchaseLabelsCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task1.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PurchaseLabelsCheck" />
-      <option name="METHOD_NAME" value="PurchaseLabelsCheck" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MenuClick.MenuClicking" />
+        <item itemvalue="JUnit.MenuClick" />
         <item itemvalue="JUnit.PurchaseLabelsCheck.PurchaseLabelsChecking" />
         <item itemvalue="JUnit.Task8.test" />
         <item itemvalue="JUnit.MyFirstTest" />
-        <item itemvalue="JUnit.PurchaseLabelsCheck" />
-        <item itemvalue="JUnit.PurchaseLabelsCheck.PurchaseLabelsCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +169,7 @@
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="driver.findElement(By.cssSelector(&quot;#content &gt; form &gt; table &gt; tbody &gt; tr:nth-child(1)&quot;))" />
+        <watch expression="By.cssSelector(&quot;#box-most-popular &gt; div &gt; ul &gt; li&quot;)" />
       </configuration>
     </watches-manager>
   </component>
