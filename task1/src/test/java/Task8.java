@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -6,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.After;
 import org.openqa.selenium.By;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,38 +29,36 @@ public class Task8 {
         driver.get(" http://localhost/litecart/admin/?app=countries&doc=countries");
 
         int counties_ammount = driver.findElements(By.cssSelector("#content td:nth-child(5) a")).size();
-        char[] char_arr = new char[counties_ammount];
+        ArrayList<String> str_arr = new ArrayList<>();
+        ArrayList<String> str_arr_sort;
+        ArrayList<String> str_arr_zones = new ArrayList<>();
+        ArrayList<String> str_arr_zones_sort;
 
-        for (int i = 2; i < (counties_ammount); i++) {
-            char_arr[i] = driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(5) a")).getAttribute("textContent").charAt(0);
+        for (int i = 2; i <= (counties_ammount); i++) {
+            str_arr.add(driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(5) a")).getAttribute("textContent"));
+
             String S = driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(6)")).getAttribute("textContent");
-            System.out.println(S);
             boolean equals = S.equals("0");
-            System.out.println(equals);
+          //  System.out.println(equals);
             if (equals == false) {
                 driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(7)")).click();
                 int zones_ammount = driver.findElements(By.cssSelector("#table-zones td:nth-child(3)")).size();
-                char[] char_arr_zones = new char[zones_ammount];
-                for (int j = 2; j < (zones_ammount); j++) {
-                    char_arr_zones[j] = driver.findElement(By.cssSelector("#table-zones tr:nth-child(" + j + ") td:nth-child(3)")).getText().charAt(0);
-                    char[] nonSortedArray = Arrays.copyOfRange(char_arr, 2, zones_ammount);
-                    char[] SortedArray = Arrays.copyOfRange(char_arr, 2, zones_ammount);
-                    Arrays.sort(SortedArray);
-                    if (Arrays.equals(nonSortedArray, SortedArray) == false) {
-                        throw new Exception("Countries are not in alphabetical order");
-                    }
+                for (int j = 2; j <= (zones_ammount); j++) {
+                    str_arr_zones.add(driver.findElement(By.cssSelector("#table-zones tr:nth-child(" + j + ") td:nth-child(3)")).getText());
                 }
-                System.out.println(char_arr_zones + "- zone");
+
+                str_arr_zones_sort=str_arr_zones;
+                Arrays.sort(new ArrayList[]{str_arr_zones_sort});
+                Assert.assertEquals( "Cортировка зон не по алфавиту", str_arr_zones, str_arr_zones_sort);
+
                 driver.get(" http://localhost/litecart/admin/?app=countries&doc=countries");
             }
         }
+        str_arr_sort = str_arr;
+        Arrays.sort(new ArrayList[]{str_arr_sort});
+        Assert.assertEquals( "Cортировка стран не по алфавиту", str_arr, str_arr_sort);
 
-        char[] nonSortedArray = Arrays.copyOfRange(char_arr, 2, counties_ammount);
-        char[] SortedArray = Arrays.copyOfRange(char_arr, 2, counties_ammount);
-        Arrays.sort(SortedArray);
-        if (Arrays.equals(nonSortedArray, SortedArray) == false) {
-            throw new Exception("Countries are not in alphabetical order");
-        }
+
     }
 
     @After
