@@ -58,6 +58,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="openjdk-17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -65,7 +68,7 @@
       <recent name="C:\Users\Q\Documents\GitHub\selenium-webdriver-training\task1\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Task14.test">
+  <component name="RunManager" selected="JUnit.Task12.test">
     <configuration name="Task11.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -118,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task12.test" />
         <item itemvalue="JUnit.Task14.test" />
         <item itemvalue="JUnit.Task9.test" />
         <item itemvalue="JUnit.Task13.test" />
-        <item itemvalue="JUnit.Task12.test" />
         <item itemvalue="JUnit.Task11.test" />
       </list>
     </recent_temporary>
@@ -177,16 +180,6 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/task1/src/test/java/Task13.java</url>
           <line>59</line>
           <option name="timeStamp" value="19" />
@@ -195,6 +188,31 @@
           <url>file://$PROJECT_DIR$/task1/src/test/java/Task13.java</url>
           <line>52</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

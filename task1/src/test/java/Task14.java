@@ -40,7 +40,7 @@ public class Task14 {
 
         driver.findElement(new By.ByLinkText("Countries")).click();
         driver.findElement(new By.ByCssSelector("#content tr:nth-child(2) td:nth-child(7)")).click();
-        
+
         String mainWindow = driver.getWindowHandle();
         Set<String> oldWindows = driver.getWindowHandles();
         List<WebElement> ExternalLinks = driver.findElements(By.cssSelector(".fa-external-link"));
