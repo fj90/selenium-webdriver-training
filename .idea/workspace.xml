@@ -68,17 +68,7 @@
       <recent name="C:\Users\Q\Documents\GitHub\selenium-webdriver-training\task1\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Task13.test">
-    <configuration name="Task11.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task1.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task11" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Task17.test">
     <configuration name="Task12.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,6 +99,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task17.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task17" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task9.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task17.test" />
         <item itemvalue="JUnit.Task13.test" />
         <item itemvalue="JUnit.Task12.test" />
         <item itemvalue="JUnit.Task14.test" />
         <item itemvalue="JUnit.Task9.test" />
-        <item itemvalue="JUnit.Task11.test" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +213,11 @@
           <url>file://$PROJECT_DIR$/task1/src/test/java/Task13.java</url>
           <line>54</line>
           <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task17.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
