@@ -31,7 +31,6 @@ public class Task17 {
         for (int j = 5; j <= (elemets_ammount + 1); j++){
             driver.findElement(By.cssSelector("#content tr:nth-child("+ j +") td:nth-child(3) a")).click();
             wait.until(ExpectedConditions.presenceOfElementLocated(new By.ByLinkText("General")));
-            String product_name = driver.findElement(By.cssSelector("[name='name[en]']")).getText();
             driver.navigate().back();
             }
 
