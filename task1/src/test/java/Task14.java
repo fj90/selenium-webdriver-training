@@ -45,16 +45,16 @@ public class Task14 {
         Set<String> oldWindows = driver.getWindowHandles();
         List<WebElement> ExternalLinks = driver.findElements(By.cssSelector(".fa-external-link"));
 
-        for (int i = 2; i < ExternalLinks.size()+4; i++) {
-            if (i==4) {i=i++;  continue;}
-            if (i==5) {i=i++;  continue;}
-            driver.findElement(new By.ByCssSelector("#content tr:nth-child(" +i+ ") i.fa.fa-external-link")).click();
+
+
+        for (WebElement link : ExternalLinks) {
+            link.click();
             String newWindow = wait.until(anyWindowOtherThan(oldWindows));
             driver.switchTo().window(newWindow);
             driver.close();
-            System.out.println( "Окно с порядковым номером " + i + " закрыто");
             driver.switchTo().window(mainWindow);
         }
+
 
         }
 

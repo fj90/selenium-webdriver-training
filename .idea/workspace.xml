@@ -68,7 +68,7 @@
       <recent name="C:\Users\Q\Documents\GitHub\selenium-webdriver-training\task1\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Task12.test">
+  <component name="RunManager" selected="JUnit.Task14.test">
     <configuration name="Task12.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task1.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -126,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task14.test" />
         <item itemvalue="JUnit.Task12.test" />
         <item itemvalue="JUnit.Task19" />
         <item itemvalue="JUnit.Task17.test" />
         <item itemvalue="JUnit.Task13.test" />
-        <item itemvalue="JUnit.Task14.test" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +223,11 @@
           <url>file://$PROJECT_DIR$/task1/src/test/java/Task12.java</url>
           <line>38</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task1/src/test/java/Task14.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
