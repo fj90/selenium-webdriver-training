@@ -33,7 +33,9 @@ public class Task12 {
         driver.findElement(new By.ByLinkText("Add New Product")).click();
 
         //General
-        driver.findElement(By.name("name[en]")).sendKeys("New name");
+        double a = Math.random()*1000+Math.random()*400+Math.random()*30;//создание рандомного числа
+        int a1= (int) a;
+        driver.findElement(By.name("name[en]")).sendKeys("New name"+a1);
         driver.findElement(By.cssSelector("[name='code']")).sendKeys("Code");
         driver.findElement(By.cssSelector("[name='product_groups[]']")).click();
         driver.findElement(By.cssSelector("[name='quantity']")).sendKeys("20.0000");
@@ -70,7 +72,7 @@ public class Task12 {
         //Finding
         driver.findElement(By.cssSelector("#doc-catalog span")).click();
         driver.findElement(By.linkText("Rubber Ducks")).click();
-        Assert.assertTrue(driver.findElement(By.linkText("New name")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.linkText("New name"+a1)).isDisplayed());
     }
 
     @After
