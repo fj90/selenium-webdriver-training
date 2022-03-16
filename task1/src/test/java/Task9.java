@@ -31,15 +31,20 @@ public class Task9 {
 
         for (int g = 2; g <= (geo_zone_ammount + 1); g++) {
             ArrayList<String> str_arr = new ArrayList<>();
-            ArrayList<String> str_arr_sort;
+            ArrayList<String> str_arr_sort = new ArrayList<>();
             String geo_zone_name = driver.findElement(By.cssSelector("#content tr:nth-child(" + g + ") td:nth-child(3) a")).getText();
             driver.findElement(By.cssSelector("#content tr:nth-child(" + g + ") td:nth-child(3) a")).click();
             int zone_ammount = driver.findElements(By.cssSelector("#table-zones td:nth-child(3) select")).size();
             for (int i = 2; i <= (zone_ammount + 1); i++) {
                 str_arr.add(driver.findElement(By.cssSelector("#table-zones tr:nth-child(" + i + ") td:nth-child(3) option[selected]")).getAttribute("textContent"));
             }
-            str_arr_sort = str_arr;
+            for (int k = 0; k < str_arr.size(); k++) {
+                str_arr_sort.add(str_arr.get(k));
+            }
             Arrays.sort(new ArrayList[]{str_arr_sort});
+//            str_arr_sort.add("sdgs");
+            System.out.println(str_arr);
+            System.out.println(str_arr_sort);
             Assert.assertEquals("сортировка зон геозоны " + geo_zone_name + " не по алфавиту", str_arr, str_arr_sort);
             driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         }
