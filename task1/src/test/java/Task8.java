@@ -29,14 +29,16 @@ public class Task8 {
         driver.get(" http://localhost/litecart/admin/?app=countries&doc=countries");
 
         int counties_ammount = driver.findElements(By.cssSelector("#content td:nth-child(5) a")).size();
+        ArrayList<String> all_countries = new ArrayList<>();
+        ArrayList<String> all_countries_sort = new ArrayList<>();
 
         for (int i = 2; i <= (counties_ammount + 1); i++) {
             ArrayList<String> str_arr = new ArrayList<>();
             str_arr.add(driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(5) a")).getAttribute("textContent"));
+            all_countries.add(driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(5) a")).getAttribute("textContent"));
 
             String S = driver.findElement(By.cssSelector("#content tr:nth-child(" + i + ") td:nth-child(6)")).getAttribute("textContent");
             boolean equals = S.equals("0");
-            ArrayList<String> str_arr_sort = new ArrayList<>();
             ArrayList<String> str_arr_zones = new ArrayList<>();
             if (equals == false) {
                 ArrayList<String> str_arr_zones_sort = new ArrayList<>();
@@ -55,16 +57,16 @@ public class Task8 {
                 System.out.println(str_arr_zones_sort);
                 driver.get(" http://localhost/litecart/admin/?app=countries&doc=countries");
             }
-
-            for (int k = 0; k < str_arr.size(); k++) {
-                str_arr_sort.add(str_arr.get(k));
-            }
-            Arrays.sort(new ArrayList[]{str_arr_sort});
-//            str_arr.add("sdfs");
-            System.out.println(str_arr_sort);
-            System.out.println(str_arr);
-            Assert.assertEquals("Cортировка стран не по алфавиту", str_arr, str_arr_sort);
         }
+        for (int k = 0; k < all_countries.size(); k++) {
+            all_countries_sort.add(all_countries.get(k));
+        }
+        Arrays.sort(new ArrayList[]{all_countries_sort});
+//            all_countries.add("sdfs");
+        System.out.println(all_countries_sort);
+        System.out.println(all_countries);
+        Assert.assertEquals("Cортировка стран не по алфавиту", all_countries, all_countries_sort);
+
     }
 
     @After
